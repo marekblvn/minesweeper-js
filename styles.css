@@ -1,0 +1,213 @@
+html {
+  --main-bg-color: #c0c0c0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  max-width: fit-content;
+  height: fit-content;
+  image-rendering: pixelated;
+}
+
+.layout-table {
+  width: auto;
+  padding: 0;
+  border-spacing: 0;
+  border: 1px solid var(--main-bg-color);
+  background-color: var(--main-bg-color);
+}
+
+.corner {
+  width: 10px;
+  height: 10px;
+}
+
+.corner.tl {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -81px;
+}
+
+.corner.tr {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -26px -81px;
+}
+
+.corner.cl {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -91px;
+}
+
+.corner.cr {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -26px -91px;
+}
+
+.corner.bl {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -101px;
+}
+
+.corner.br {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -26px -101px;
+}
+
+.horizontal {
+  width: 16px;
+  height: 10px;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -10px -81px;
+}
+
+.vertical {
+  width: 10px;
+  height: 32px;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -36px -81px;
+}
+
+.vertical-small {
+  width: 10px;
+  height: 16px;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -36px -81px;
+}
+
+.shadow {
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: -46px -81px;
+  width: 39px;
+  height: 23px;
+  padding: 1px;
+  margin: auto;
+}
+
+.led-display {
+  width: 53px;
+  text-align: center;
+}
+
+.segment {
+  width: 13px;
+  height: 23px;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+}
+
+.segment.\30 {
+  background-position: 0 -32px;
+}
+.segment.\31 {
+  background-position: -13px -32px;
+}
+.segment.\32 {
+  background-position: -26px -32px;
+}
+.segment.\33 {
+  background-position: -39px -32px;
+}
+.segment.\34 {
+  background-position: -52px -32px;
+}
+.segment.\35 {
+  background-position: -65px -32px;
+}
+.segment.\36 {
+  background-position: -78px -32px;
+}
+.segment.\37 {
+  background-position: -91px -32px;
+}
+.segment.\38 {
+  background-position: -104px -32px;
+}
+.segment.\39 {
+  background-position: -117px -32px;
+}
+
+.control-button {
+  width: 26px;
+  height: 26px;
+  margin: auto;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -55px;
+  cursor: pointer;
+}
+
+.control-button:active {
+  background-position: -26px -55px;
+}
+
+.control-button.suspense {
+  background-position: -52px -55px;
+}
+
+.control-button.dead {
+  background-position: -78px -55px;
+}
+
+.control-button.cool {
+  background-position: -104px -55px;
+}
+
+.cell {
+  width: 16px;
+  height: 16px;
+  background-image: url("./assets/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -16px;
+}
+
+.cell.flag {
+  background-position: -48px -16px;
+}
+
+.cell.open.\30 {
+  background-position: -16px -16px;
+}
+.cell.open.\31 {
+  background-position: 0px 0px;
+}
+.cell.open.\32 {
+  background-position: -16px 0px;
+}
+.cell.open.\33 {
+  background-position: -32px 0px;
+}
+.cell.open.\34 {
+  background-position: -48px 0px;
+}
+.cell.open.\35 {
+  background-position: -64px 0px;
+}
+.cell.open.\36 {
+  background-position: -80px 0px;
+}
+.cell.open.\37 {
+  background-position: -96px 0px;
+}
+.cell.open.\38 {
+  background-position: -112px 0px;
+}
+
+.cell.open.mine {
+  background-position: -32px -16px;
+}
+.cell.open.mine.false {
+  background-position: -64px -16px;
+}
+.cell.open.mine.exploded {
+  background-position: -80px -16px;
+}
